@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Your feedback is invaluable to us as it accelerates our progress. Thank you!</p>
+</head>
+<form id="survey-form">
+  <div>
+    <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Alex"></label>
+  </div>
+  <div>
+    <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="abc@abc.com"></label>
+  </div>
+  <div>
+    <label for="number" id="number-label">Age (optional): <input type="number" min="18" max="120" placeholder="18" id="number"></label>
+  </div>
+  <div name="f_label">
+  <label for="dropdown" name="f_label">How long you use our product?
+    <select required id="dropdown">
+        <option>Less than week</option>
+        <option>Less than a month</option>
+        <option>Less than a 6 month</option>
+        <option>Less than a year</option>
+        <option>Less than a 3 year</option>
+        <option>More than a 3 year</option>
+    </select>
+  </label>
+  </div>
+  <div>
+    <label>Would you recommend our product to your frends?</label>
+    <label for="rec_radio"><input type="radio" name="recommendation" id="rec_radio" value="plus">Definetly</label>
+    <label for="rec_radio"><input type="radio" name="recommendation" id="rec_radio" value="not">May be</label>
+    <label for="rec_radio"><input type="radio" name="recommendation" id="rec_radio" value="minus">Not Sure</label>
+  </div>
+  <div>
+    <label>What you are like in our product?</label>
+    <label><input type="checkbox" value="like_field">Easy to use</label>
+    <label><input type="checkbox" value="like_field">Interface</label>
+    <label><input type="checkbox" value="like_field">Functionality</label>
+    <label><input type="checkbox" value="like_field">Community</label>
+    <label><input type="checkbox" value="like_field">Security Features</label>
+    <label><input type="checkbox" value="like_field">Price</label>
+  </div>
+  <div>
+    <label for="text_field">How we can improve our product?<textarea id="text_field"></textarea></label>
+  </div>
+  <div>
+    <label><input type="submit" id="submit"></label>
+  </div>
+</form>
+</html>
